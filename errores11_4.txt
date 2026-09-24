@@ -1,0 +1,8 @@
+Errores encontrados en el documento 11_4.html:
+En la primera línea podemos ver que falta la letra "l" de html.
+En la segunda línea podemos ver que falta la letra "g" de lang y las comillas para "es".
+En la cuarta línea podemos ver que falta cerrar la etiqueta title mediante </title>.
+En la séptima línea podemos ver que en "Contacto" parece estar cerrada la etiqueta h1 pero falta ponerle la barra (/), quedaría así: </h1>.
+En la octava línea podemos ver que hay que cambiar el orden de las finalizaciones de etiquetas p y b.
+En la novena línea podemos ver que falta cerrar la etiqueta p con </p>.
+En la línea número 11 y 12 tenemos el mismo problema el cuál es que falta cerrar la etiqueta li usando </li>.
