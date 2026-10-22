@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Guía básica de Git</title>
+</head>
+<body>
+  <h1 id="inicio">Guía básica de Git</h1>
+  <br>
+  <h2 id="indice">Índice</h2>
+  <ul>
+    <li><a href="#que-es">¿Qué es Git?</a></li>
+    <li><a href="#instalacion">Instalación y configuración</a></li>
+    <li><a href="#primer-repositorio">Tu primer repositorio</a></li>
+    <li><a href="#ramas">Trabajar con ramas</a></li>
+  </ul>
+
+  <h2 id="que-es">¿Qué es Git?</h2>
+  <p>Git es un sistema de control de versiones: un programa que guarda el historial de cambios de tus archivos para que puedas volver a cualquier punto anterior si algo sale mal.</p>
+  <p>Además, facilita el trabajo en equipo. Varias personas pueden modificar el mismo proyecto a la vez y Git ayuda a combinar sus cambios sin pisarse unas a otras.</p>
+  <p><a href="#indice">Volver al índice</a></p>
+
+  <h2 id="instalacion">Instalación y configuración</h2>
+  <p>Puedes descargar Git desde su web oficial, git-scm.com, para Windows, macOS o Linux. En muchas distribuciones de Linux basta con instalarlo desde el gestor de paquetes.</p>
+  <p>Después de instalarlo, conviene indicar quién eres con los comandos <code>git config --global user.name</code> y <code>git config --global user.email</code>. Esos datos aparecerán en cada cambio que guardes.</p>
+  <p><a href="#indice">Volver al índice</a></p>
+
+  <h2 id="primer-repositorio">Tu primer repositorio</h2>
+  <p>Dentro de la carpeta de tu proyecto, ejecuta <code>git init</code> para crear un repositorio. A partir de ese momento Git vigila los cambios de esa carpeta.</p>
+  <p>Para guardar una versión, primero se preparan los archivos con <code>git add .</code> y luego se confirma con <code>git commit -m "Mensaje descriptivo"</code>. Cada commit es una instantánea del proyecto que podrás recuperar más adelante.</p>
+  <p><a href="#indice">Volver al índice</a></p>
+
+  <h2 id="ramas">Trabajar con ramas</h2>
+  <p>Una rama es una línea de desarrollo independiente. Sirve para probar una idea nueva o arreglar un error sin tocar la versión principal del proyecto.</p>
+  <p>Con <code>git branch</code> creas una rama y con <code>git checkout nombre</code> te cambias a ella. Cuando el trabajo está terminado, se une a la rama principal con <code>git merge nombre</code></p>
+  <p><a href="#indice">Volver al índice</a> | <a href="#inicio"> Ir al principio de la página</a></p>
+</body>
+</html>
