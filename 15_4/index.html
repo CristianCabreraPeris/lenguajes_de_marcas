@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla de datos completa</title>
+  <style>
+    table {
+      border: 2px solid #333;
+      border-spacing: 8px;
+      empty-cells: hide;
+      caption-side: bottom;
+      width: 600px;
+    }
+    caption {
+      font-style: italic;
+      padding-top: 8px;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 6px;
+    }
+    thead th {
+      background-color: #333;
+      color: white;
+    }
+    tbody td {
+      background-color: #eef;
+    }
+    tbody td.categoria {
+      background-color: #dde;
+    }
+    .centro {
+      vertical-align: middle;
+    }
+    .arriba {
+      vertical-align: top;
+    }
+    .derecha {
+      text-align: right;
+    }
+    tfoot th, tfoot td {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Inventario de productos</caption>
+
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Categoría</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>Observaciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Ratón</td>
+        <td rowspan="3" class="categoria centro">Periféricos</td>
+        <td class="derecha">10</td>
+        <td class="derecha">12,50 €</td>
+        <td>Inalámbrico</td>
+      </tr>
+      <tr>
+        <td>Teclado</td>
+        <td class="derecha">8</td>
+        <td class="derecha">25,00 €</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Auriculares</td>
+        <td class="derecha">15</td>
+        <td class="derecha">30,00 €</td>
+        <td>Con micrófono</td>
+      </tr>
+      <tr>
+        <td>Monitor 24"</td>
+        <td rowspan="2" class="categoria arriba">Pantallas</td>
+        <td class="derecha">5</td>
+        <td class="derecha">140,00 €</td>
+        <td>Full HD</td>
+      </tr>
+      <tr>
+        <td>Monitor 27"</td>
+        <td class="derecha">3</td>
+        <td class="derecha">210,00 €</td>
+        <td>2K</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th colspan="2" class="derecha">Total</th>
+        <td></td>
+        <td class="derecha">417,50 €</td>
+        <td></td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
