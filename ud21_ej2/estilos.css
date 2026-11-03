@@ -1,0 +1,21 @@
+/* Selector universal: fuente de toda la página */
+* {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Selectores de tipo: un color distinto para cada encabezado */
+h1 {
+  color: red;
+}
+
+h2 {
+  color: yellow;
+}
+
+/* Regla con 2 declaraciones: los parrafos con alineación justificada y color gris */
+p {
+  text-align: justify;
+  color: gray;
+}
+
+/* Prueba del orden de la regla universal: la he puesto la primera y la última y el resultado NO cambia, porque * solo declara font-family y el resto de reglas no tocan esa propiedad. */
