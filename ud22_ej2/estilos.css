@@ -1,0 +1,7 @@
+.modulos {
+  list-style: url("img/icono.svg") outside disc;
+}
+
+.modulos li {
+  margin-bottom: 0.5rem;
+}

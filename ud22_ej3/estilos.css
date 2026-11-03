@@ -1,0 +1,31 @@
+body {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  background-color: #1d3557;
+  border: 2px solid #457b9d;
+  border-radius: 999px;
+  margin: 0 10px 10px 0;
+}
+
+nav a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav li:hover {
+  background-color: red;
+  border-color: red;
+}
