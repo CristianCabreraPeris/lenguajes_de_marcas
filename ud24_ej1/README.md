@@ -1,0 +1,2 @@
+Me quedo con flex. Con inline-block los espacios en blanco entre las etiquetas del HTML ocupan sitio y descuadran las cuentas, y con flex basta una línea.
+El padding es el espacio por dentro de la caja, entre el contenido y el borde, y lleva el color de fondo. El margin es el espacio por fuera, entre una caja y las demás, y es transparente.

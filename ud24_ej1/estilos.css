@@ -1,0 +1,57 @@
+/*Parte A: cajas visibles y centradas*/
+
+/* Contenedor: 800px de ancho, centrado, con borde y 20px de padding */
+.pagina {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #333333;
+}
+/* Cada bloque con fondo y borde distintos para ver dónde empieza y acaba */
+.cabecera {
+  background-color: #cfe8ff;
+  border: 2px solid #4a78a8;
+  text-align: center;
+}
+
+.contenido {
+  background-color: #fff3cd;
+  border: 2px solid #b8962e;
+}
+
+.pie {
+  background-color: #d4edda;
+  border: 2px solid #4c8c5a;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*Parte B: tarjetas en fila*/
+
+/* Versión final: flex en el contenedor (los hijos se colocan en fila) */
+.contenido {
+  display: flex;
+}
+
+/* Tamaño de cada tarjeta */
+.tarjeta {
+  width: 200px;
+  padding: 15px;
+  border: 1px solid #555555;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/*Parte C: block, inline y none*/
+
+/* Elemento en línea (span): ignora width, height y los márgenes verticales.
+Con display: inline-block se aplican todas las propiedades. */
+.etiqueta {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  background-color: #2a9d8f;
+  color: #ffffff;
+}
