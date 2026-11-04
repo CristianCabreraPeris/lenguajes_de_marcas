@@ -1,0 +1,50 @@
+/* Página */
+body {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: Georgia;
+  line-height: 1.6;
+}
+
+/* first-letter y first-line */
+p::first-letter {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #c0392b;
+}
+
+p::first-line {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+::selection {
+  background-color: #ffd54f;
+  color: #222222;
+}
+
+/* before en la lista */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li::before {
+  content: "✔ ";
+  color: #2e8b57;
+}
+
+/* after en enlaces que se abren en otra pestaña */
+a[target="_blank"]::after {
+  content: " ↗";
+}
+
+/* after en los h2: barra pequeña para decorar */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin-top: 6px;
+  background-color: #e63946;
+}

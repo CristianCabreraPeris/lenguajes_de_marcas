@@ -1,0 +1,74 @@
+/* Página */
+body {
+  background-color: #e9967a;
+  font-family: "Times New Roman", Times, serif;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 1.6em;
+  margin: 0 0 20px 20px;
+}
+
+table {
+  width: 640px;
+  border-collapse: collapse;
+}
+
+td {
+  width: 50%;
+  border: 3px solid #ffffff;
+  padding: 4px;
+}
+
+label,
+.etiqueta {
+  font-weight: bold;
+}
+
+label.normal {
+  font-weight: normal;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.ancho {
+  width: 370px;
+}
+
+/* Pseudoclases */
+
+/* focus: el campo que tiene el cursor cambia de fondo */
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: #fff3b0;
+}
+
+/* required: borde izquierdo rojo de 4px en los campos obligatorios */
+input:required {
+  border-left: 4px solid #d62828;
+}
+
+input[type="text"]:read-only:not(:disabled) {
+  color: #777777;
+  background-color: #dddddd;
+}
+
+/* disabled: el código promocional se ve atenuado */
+input:disabled {
+  opacity: 0.5;
+}
+
+input:checked + label {
+  font-weight: bold;
+  color: #1b7f3a;
+}
+
+/* Dos pseudoclases combinadas: hover y focus a la vez */
+input:hover:focus,
+textarea:hover:focus {
+  background-color: #ffd6a5;
+}

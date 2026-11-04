@@ -1,0 +1,52 @@
+/* Página*/
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  margin: 30px;
+}
+
+/* Tabla */
+table {
+  border-collapse: collapse;
+  width: 500px;
+}
+
+th,
+td {
+  border: 1px solid #cccccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+/*
+  Cabecera: tiene su propio fondo en las celdas (th). Aunque la primera fila
+  también es un tr, la de abajo no se nota en ella.
+*/
+th {
+  background-color: #264653;
+  color: #ffffff;
+}
+
+tr:nth-child(odd) {
+  background-color: #eaf4f4;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Fondo amarillo al pasar el ratón, pero no en la cabecera */
+tr:not(:first-child):hover {
+  background-color: #ffe14d;
+}
+
+/* Lista */
+
+/* Elementos 1, 4 y 7 con una sola regla */
+li:nth-child(3n+1) {
+  color: #d62828;
+}
+
+/* Solo el tercer elemento en negrita */
+li:nth-child(3) {
+  font-weight: bold;
+}
