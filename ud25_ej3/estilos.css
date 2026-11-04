@@ -1,0 +1,56 @@
+/* Página */
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  padding: 20px 30px;
+}
+
+/* Parte A: tarjeta con etiqueta */
+.tarjeta {
+  /* La tarjeta necesita position: relative para que la etiqueta se coloque respecto a ella */
+  position: relative;
+  width: 300px;
+  border: 1px solid #555555;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.foto {
+  height: 120px;
+  background-color: #e9c46a;
+  border-radius: 6px;
+}
+
+.precio {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.descuento {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 6px 10px;
+  background-color: #e63946;
+  color: white;
+  font-weight: bold;
+  border-radius: 100px;
+}
+
+/* Parte B: caja de comentarios */
+.comentarios {
+  width: 300px;
+  height: 120px;
+  border: 1px solid #555555;
+  padding: 0 10px;
+  overflow: auto;
+}
+
+/* Parte B: visibility y display */
+.oculta-visibility {
+  visibility: hidden;
+}
+
+.oculta-display {
+  display: none;
+}

@@ -1,0 +1,40 @@
+.contenedor {
+  width: 300px;
+  border: 2px solid #333333;
+  /* Paso absolute: con esto c3 se coloca respecto al contenedor y no respecto a la página */
+  position: relative;
+}
+
+.cuadro {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 2em;
+}
+
+.c1 {
+  background-color: #e76f51;
+  left: 50px;
+  /* Paso z-index: para que c1 quede por encima de c2 tiene que estar posicionado */
+  position: relative;
+  z-index: 2;
+}
+
+/* relative */
+.c2 {
+  background-color: #2a9d8f;
+  position: relative;
+  /* Primero probé top: 20px; después top: -40px para que solape a c1 */
+  top: -40px;
+  left: 50px;
+  z-index: 1;
+}
+
+/* absolute */
+.c3 {
+  background-color: #264653;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

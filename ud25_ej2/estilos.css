@@ -1,0 +1,72 @@
+/* Página */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  line-height: 1.6;
+}
+
+/* Banner */
+.banner {
+  background-color: #264653;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner h1 {
+  margin: 0 0 10px 0;
+}
+
+/* Menú */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #2a9d8f;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 14px 24px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #21867a;
+}
+
+/* Secciones */
+section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  /* Evita que el menú pegado tape el título al saltar con un ancla */
+  scroll-margin-top: 60px;
+}
+
+/* Botón de subir */
+.subir {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 10px;
+  background-color: #e76f51;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 100px;
+}
