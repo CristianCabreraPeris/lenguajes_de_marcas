@@ -1,0 +1,269 @@
+/* Página */
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222222;
+}
+
+.contenedor {
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+h2 {
+  margin: 0 0 14px 0;
+  font-size: 26px;
+  color: #225e40;
+}
+
+section {
+  position: static;
+  padding: 20px 20px 24px 20px;
+  scroll-margin-top: 50px;
+}
+
+section p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Cabecera */
+/* position: relative el sello se coloca respecto a la cabecera */
+header {
+  position: relative;
+  box-sizing: border-box;
+  height: 133px;
+  padding-top: 36px;
+  background-color: #2f5d46;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 32px;
+}
+
+header p {
+  margin: 0;
+  font-size: 17px;
+}
+
+/* position: absolute círculo naranja a 16px de la esquina superior derecha de la cabecera */
+.sello {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: block;
+  box-sizing: border-box;
+  width: 84px;
+  height: 84px;
+  padding: 26px 6px 0 6px;
+  border-radius: 50%;
+  background-color: #c4711f;
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+}
+
+/* Menú */
+/* position: sticky se pega arriba al bajar y queda por encima del contenido */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #1b7548;
+  border-top: 1px solid white;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: inline-block;
+  padding: 13px 24px;
+  font-size: 15px;
+  line-height: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ec9c4c;
+}
+
+/* Rutas: tarjetas en fila con inline-block */
+/* position: relative: la etiqueta se coloca respecto a la tarjeta
+   overflow: hidden: lo que sobresalga de la tarjeta se recorta */
+.tarjeta {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 270px;
+  margin: 8px 11px 0 11px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.foto {
+  height: 110px;
+}
+
+.foto1 {
+  background-color: #68886d;
+}
+
+.foto2 {
+  background-color: #9cc1da;
+}
+
+.foto3 {
+  background-color: #b19053;
+}
+
+/* position: absolute a 10px de la esquina superior derecha, sobre la foto */
+.nivel {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background-color: #be6d1c;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.texto {
+  padding: 12px 14px 14px 14px;
+}
+
+.texto h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.texto p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* position: relative con top negativo sube 12px sin mover a sus vecinas */
+.tarjeta-central {
+  top: -12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Galería */
+.galeria {
+  position: relative;
+  height: 290px;
+}
+
+/* position: absolute cada polaroid se coloca dentro de la galería */
+.polaroid {
+  position: absolute;
+  width: 280px;
+  height: 210px;
+  border: 6px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.polaroid1 {
+  top: 24px;
+  left: 30px;
+}
+
+.polaroid2 {
+  top: 74px;
+  left: 250px;
+  z-index: 2;
+}
+
+.polaroid3 {
+  top: 24px;
+  left: 470px;
+}
+
+/* Al pasar el ratón, la polaroid pasa al frente */
+.polaroid:hover {
+  z-index: 3;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+}
+
+/* El pie de foto va pegado al borde inferior de cada polaroid */
+.pie-foto {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 10px;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 13px;
+}
+
+/* Opiniones: caja con scroll */
+.opiniones {
+  box-sizing: border-box;
+  height: 170px;
+  border: 1px solid #c7bebe;
+  border-radius: 6px;
+  background-color: white;
+  overflow: auto;
+}
+
+.opiniones article {
+  padding: 8px 14px;
+  border-bottom: 1px solid white;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+/* Pie de página y botón Subir */
+footer {
+  padding: 24px 0 70px 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* position: fixed siempre visible en la esquina inferior derecha */
+.subir {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background-color: #d88736;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}

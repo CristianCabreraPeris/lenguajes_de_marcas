@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,700");
+
+/* Página */
+body {
+  margin: 4px;
+  font-family: "Nunito", sans-serif;
+  color: #222222;
+}
+
+/* Cabecera */
+header {
+  position: relative;
+  box-sizing: border-box;
+  height: 146px;
+  margin-bottom: 8px;
+  padding-top: 17px;
+  background-color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 7px 0;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #681f1f;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #146414;
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  width: 110px;
+  height: 110px;
+}
+
+.logo-izquierdo {
+  left: 28px;
+}
+
+.logo-derecho {
+  right: 28px;
+}
+
+/* Menú de navegación */
+nav {
+  margin-bottom: 8px;
+  background-color: white;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/* Los bordes son transparentes */
+nav a {
+  display: inline-block;
+  padding: 0 4px;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: gray;
+}
+
+nav a:hover {
+  color: red;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+
+/* Sección de redes sociales */
+section article {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 32.8%;
+  height: 256px;
+  margin-bottom: 6px;
+  padding: 10px;
+}
+
+section article img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 70px;
+  height: 70px;
+}
+
+.texto {
+  width: 300px;
+  margin-left: 79px;
+}
+
+.texto h3 {
+  margin: 8px 0 16px 0;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.texto p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+/* Un color para cada article con nth-child */
+section article:nth-child(1) {
+  background-color: rgba(162, 179, 188, 0.5);
+}
+
+section article:nth-child(2) {
+  background-color: rgba(241, 151, 79, 0.5);
+}
+
+section article:nth-child(3) {
+  background-color: rgba(208, 61, 107, 0.5);
+}
+
+section article:nth-child(4) {
+  background-color: rgba(195, 23, 65, 0.5);
+}
+
+section article:nth-child(5) {
+  background-color: rgba(109, 104, 166, 0.5);
+}
+
+section article:nth-child(6) {
+  background-color: rgba(156, 154, 203, 0.5);
+}
+
+/* Pie de página */
+footer {
+  margin-top: 8px;
+}
+
+.redes {
+  padding: 5px 0;
+  background-color: white;
+  text-align: center;
+}
+
+.redes img {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+}
+
+.copyright {
+  margin-top: 6px;
+  background-color: white;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+/* Imágenes de redes sociales se aumentan al pasar el raton */
+.red {
+  transition: transform 0.3s ease;
+}
+
+.red:hover {
+  transform: scale(1.2);
+}
