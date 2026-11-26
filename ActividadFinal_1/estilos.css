@@ -2,20 +2,27 @@
 
 /* Página */
 body {
-  margin: 4px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "cabecera"
+  "menu"
+  "contenido"
+  "footer"
+  "section";
   font-family: "Nunito", sans-serif;
   color: #222222;
 }
 
 /* Cabecera */
 header {
-  position: relative;
+  grid-area: cabecera;
   box-sizing: border-box;
   height: 146px;
-  margin-bottom: 8px;
-  padding-top: 17px;
   background-color: white;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -33,23 +40,12 @@ header h2 {
 }
 
 .logo {
-  position: absolute;
-  top: 15px;
-  width: 110px;
   height: 110px;
-}
-
-.logo-izquierdo {
-  left: 28px;
-}
-
-.logo-derecho {
-  right: 28px;
 }
 
 /* Menú de navegación */
 nav {
-  margin-bottom: 8px;
+  grid-area: menu;
   background-color: white;
   text-align: center;
 }
@@ -66,7 +62,8 @@ nav li {
 
 /* Los bordes son transparentes */
 nav a {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   padding: 0 4px;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
@@ -83,19 +80,19 @@ nav a:hover {
 }
 
 /* Sección de redes sociales */
+section{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 7px;
+}
 section article {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
   box-sizing: border-box;
-  width: 32.8%;
   height: 256px;
   margin-bottom: 6px;
   padding: 10px;
 }
 
 section article img {
-  position: absolute;
   top: 10px;
   left: 10px;
   width: 70px;
@@ -146,25 +143,25 @@ section article:nth-child(6) {
 
 /* Pie de página */
 footer {
+  display: flex;
+  justify-content: center;
   margin-top: 8px;
 }
 
 .redes {
+  display: flex;
+  flex-wrap: wrap;
   padding: 5px 0;
   background-color: white;
-  text-align: center;
 }
 
 .redes img {
-  width: 48px;
   height: 48px;
-  vertical-align: middle;
 }
 
 .copyright {
   margin-top: 6px;
   background-color: white;
-  text-align: center;
 }
 
 .copyright p {
